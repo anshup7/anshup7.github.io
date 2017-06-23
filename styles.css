@@ -1,0 +1,55 @@
+.spacing {
+  padding: 25px;                    /*Content Padding*/
+}
+
+.border {                          /* General Border Styling*/
+  border-style: solid;
+  border-width: thin;
+  border-color: darkgrey;
+  border-radius: 10px;
+}
+.intro-list {                      /* used to remove the bullets */
+  list-style: none;
+}
+
+.content {
+  width: 350px;
+}
+
+.intro {
+  font-style: italic;
+
+}
+
+.letter-spacing {
+  letter-spacing: 2px;
+}
+
+.heading {
+  font-size: 30px;
+}
+
+img {
+  width: 300px;
+  height: 300px;
+
+}
+
+.label {
+  font-weight: bold;
+}
+
+
+
+.animal-card {
+
+  width: 350px;
+  box-shadow: 5px 0px 10px darkgrey;
+  background-image: url("../images/card.png");
+  background-repeat: repeat-x;
+}
+
+.description+intro {
+  word-wrap: break-word;
+  width: 300px;
+}
