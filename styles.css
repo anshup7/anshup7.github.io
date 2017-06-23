@@ -25,6 +25,10 @@
   letter-spacing: 2px;
 }
 
+.alignment {
+  align-content: center;
+}
+
 .heading {
   font-size: 30px;
 }
