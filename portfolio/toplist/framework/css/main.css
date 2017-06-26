@@ -1,6 +1,7 @@
 * {
-    border: 1px solid red !important;
+    /*border: 1px solid red !important;*/
     font-family: 'Josefin Sans', sans-serif;
+    background-color: lavenderblush;
 }
 
 * {
@@ -19,10 +20,17 @@
     font-size: -webkit-xxx-large;
 }
 
+
+
 .transform {
     text-align: right;
     font-weight: normal;
     color: #615c61;
+}
+
+.move {
+    text-align: center;;
+    font-size: 35px;
 }
 
 .setting {
@@ -31,7 +39,9 @@
 }
 
 
-
+.spacing {
+    margin-bottom: 20px;
+}
 
 .grid {
     margin: 0 auto;
