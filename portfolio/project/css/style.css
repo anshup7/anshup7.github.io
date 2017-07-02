@@ -1,0 +1,133 @@
+* {
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: normal;
+  color: #2d3c49;
+}
+
+.responsive-link-1::before {
+  content: url("https://github.com/projects/cakephp") " https://github.com/projects/cakephp ";
+}
+.responsive-link-2::before {
+  content: url("https://github.com/projects/php") " https://github.com/projects/php ";
+}
+.responsive-link-3::before {
+  content: url("https://github.com/projects/c++") " https://github.com/projects/c++ ";
+}
+
+.tap-target {
+    min-width: 48px;
+    min-height: 48px;
+}
+
+.setting {
+  margin-top: 15px;
+  font-size: 30px;
+}
+
+
+.transform-heading-text {
+  font-size: 40px;
+}
+.transform-subheading-text {
+  font-size: 20px;
+}
+
+.featured-color {
+  color: #7d97ad;
+}
+
+.line-width {
+border: 0;
+border-top: 1px solid #eee;
+height: 5px;
+background-color: #7d97ad;
+}
+
+
+/*.transit {
+  transition-property: all;
+  transition: 0.5s ease;
+}*/
+
+@media screen and (max-width: 1210px) {
+  .transform-heading-text {
+    font-size: .95em;
+    transition: 1s ease;
+  }
+
+  .transform-subheading-text {
+    font-size: .7em;
+    transition: 1s ease;
+  }
+
+  .logo-size {
+    height: 80px;
+    transition: 1s ease;
+    vertical-align: middle
+  }
+
+}
+
+@media screen and (max-width: 1000px) {
+  .transform-heading-text {
+    font-size: .8em;
+    transition: 1s ease;
+  }
+
+  .transform-subheading-text {
+    font-size: .6em;
+    transition: 1s ease;
+  }
+
+  .logo-size {
+    height: 70px;
+    transition: 1s ease;
+    vertical-align: middle;
+  }
+}
+
+@media screen and (max-width: 750px) {
+    .responsive-caption-text {
+      font-size: .95em;
+      transition: 1s ease;
+    }
+
+    .responsive-link-1::before {
+      content: url("https://github.com/projects/cakephp") " GitHUb Link ";
+    }
+    .responsive-link-2::before {
+      content: url("https://github.com/projects/php") " GitHUb Link ";
+    }
+    .responsive-link-3::before {
+      content: url("https://github.com/projects/c++") " GitHUb Link ";
+    }
+}
+
+@media screen and (max-width: 610px) {
+  .transform-heading-text {
+    font-size: .6em;
+    transition: 1s ease;
+  }
+
+  .transform-subheading-text {
+    font-size: .4em;
+    transition: 1s ease;
+  }
+
+  .logo-size {
+    height: 50px;
+    transition: 1s ease;
+    vertical-align: middle;
+  }
+}
+@media screen and (max-width: 478px) {
+  .transform-heading-text {
+    font-size: .42em;
+    transition: 1s ease;
+  }
+
+  .transform-subheading-text {
+    font-size: .3em;
+    transition: 1s ease;
+  }
+}
