@@ -4,13 +4,13 @@
   color: #2d3c49;
 }
 
-.responsive-link-1::before {
+.responsive-link-1::after {
   content: url("https://github.com/projects/cakephp") " https://github.com/projects/cakephp ";
 }
-.responsive-link-2::before {
+.responsive-link-2::after {
   content: url("https://github.com/projects/php") " https://github.com/projects/php ";
 }
-.responsive-link-3::before {
+.responsive-link-3::after {
   content: url("https://github.com/projects/c++") " https://github.com/projects/c++ ";
 }
 
@@ -92,13 +92,13 @@ background-color: #7d97ad;
       transition: 1s ease;
     }
 
-    .responsive-link-1::before {
+    .responsive-link-1::after {
       content: url("https://github.com/projects/cakephp") " GitHUb Link ";
     }
-    .responsive-link-2::before {
+    .responsive-link-2::after {
       content: url("https://github.com/projects/php") " GitHUb Link ";
     }
-    .responsive-link-3::before {
+    .responsive-link-3::after {
       content: url("https://github.com/projects/c++") " GitHUb Link ";
     }
 }
@@ -130,4 +130,25 @@ background-color: #7d97ad;
     font-size: .3em;
     transition: 1s ease;
   }
+}
+
+@media screen and (max-width: 990px) {
+    .featured-text-responsive {
+        font-size: 1.5em;
+        transition: 1s ease;
+    }
+}
+@media screen and (max-width: 681px) {
+    .featured-text-responsive {
+        font-size: 1.2em;
+        transition: 1s ease;
+
+    }
+}
+@media screen and (max-width: 510px) {
+    .featured-text-responsive {
+        font-size: .9em;
+        transition: 1s ease;
+
+    }
 }
