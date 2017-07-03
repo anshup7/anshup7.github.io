@@ -119,6 +119,10 @@ background-color: #7d97ad;
     .responsive-link-3::after {
       content: url("https://github.com/projects/c++") " GitHUb Link ";
     }
+
+    .margin-adjust {
+      margin-left: 5%;
+    }
 }
 
 @media screen and (max-width: 610px) {
@@ -209,6 +213,16 @@ background-color: #7d97ad;
     height: 3px;
     transition: 1s ease;
   }
+
+  .transform-heading-text {
+    font-size: .35em;
+    transition: 1s ease;
+  }
+
+  .margin-adjust {
+    margin-left: 5%;
+  }
+
 }
 
 .display-none {
