@@ -1,135 +1,187 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
-    <link rel="stylesheet" href="https://anshup7.github.io/resources/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://anshup7.github.io/resources/zocial/css/zocial.css">
-    <link rel="stylesheet" href="./css/style.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script type="text/javascript" src="https://anshup7.github.io/resources/bootstrap/js/bootstrap.min.js"></script>
-    <script src="https://use.fontawesome.com/f4f12588a1.js"></script>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="utf-8">
+        <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+        <link rel="stylesheet" href="https://anshup7.github.io/resources/bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://anshup7.github.io/resources/zocial/css/zocial.css">
+        <link rel="stylesheet" href="./css/style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script type="text/javascript" src="https://anshup7.github.io/resources/bootstrap/js/bootstrap.min.js"></script>
+        <script src="https://use.fontawesome.com/f4f12588a1.js"></script>
 
-    <title>My Portfolio</title>
-</head>
-<body>
+        <title>My Portfolio</title>
+    </head>
+    <body>
 
     <!-- Modal-For First Image-->
-    <div class="modal fade" id="project1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel1" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h4 class="modal-title" id="myModalLabel1">CakePHP-Event Management System</h4>
-                </div>
-                <div class="modal-body">
-                    <img class="img-responsive" src="http://placekitten.com/555/305">
-                    This is the dummy responsive page designed by me. The images of kittens are provided as I love kittens. The images can be replaced with the actual ones. More to follow in the near future.. Wallah!
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-    <!-- Modal-For Second Image -->
-    <div class="modal fade" id="project2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel2" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h4 class="modal-title" id="myModalLabel2">PHP-5 Hostel Management System</h4>
-                </div>
-                <div class="modal-body">
-                    <img class="img-responsive" src="http://placekitten.com/555/305">
-                    This is the dummy responsive page designed by me. The images of kittens are provided as I love kittens. The images can be replaced with the actual ones. More to follow in the near future.. Wallah!
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+    <section id="Modals">
+        <h6 class="display-none">Dodging Content></h6>
+        <div class="modal fade" id="project1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel1" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title" id="myModalLabel1">CakePHP-Event Management System</h4>
+                    </div>
+                    <div class="modal-body">
+                        <img class="img-responsive modal-image-adjust" src="./images/cakephp.png" alt="The cakephp image."> <!--555x305-->
+                        I made the project on this framework named as "Event Management System". This project gave me the first experience of working on a framework. I also got to know about the MVC concept while working on this framework.
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
 
 
-    <!-- Modal-For Third Image -->
-    <div class="modal fade" id="project3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel3" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h4 class="modal-title" id="myModalLabel3">C++ Graphics Game</h4>
+        <!-- Modal-For Second Image -->
+        <div class="modal fade" id="project2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel2" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title" id="myModalLabel2">PHP-5 Hostel Management System</h4>
+                    </div>
+                    <div class="modal-body">
+                        <img class="img-responsive modal-image-adjust" src="./images/php.png" alt="The Php Logo Image">
+                        Before working on CakePhp, I worked on PHP for the first time. This experience was the first point where I developed a taste in web development. This project and the cakephp one will be designed be me as soon as I finish the nanodegree &#128519;.
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
                 </div>
-                <div class="modal-body">
-                    <img class="img-responsive" src="http://placekitten.com/555/305">
-                    This is the dummy responsive page designed by me. The images of kittens are provided as I love kittens. The images can be replaced with the actual ones. More to follow in the near future.. Wallah!
+            </div>
+        </div>
+
+
+        <!-- Modal-For Third Image -->
+        <div class="modal fade" id="project3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel3" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title" id="myModalLabel3">C++ Graphics Game</h4>
+                    </div>
+                    <div class="modal-body">
+                        <img class="img-responsive modal-image-adjust" src="./images/c++.png" alt="The C++ logo Image">
+                        This was the first ever project I was allotted in my academics. My first experience of following an <abbr title="Software Development Life Cycle">SDLC</abbr>. It posed challenges which I overcame.
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
                 </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </section>
+    <section id="content">
+        <h6 class="display-none">Dodging Content></h6>
+        <div class="container">
+            <section id="header">
+
+                <div class="row setting">
+                    <div class="col-xs-6"><img class="img-responsive logo-size" src="./images/bootstrap-prestructure_files/logo/udacity-logo.png" alt="udacity-logo of blue color and rectangular shape."></div>
+                    <div class="col-xs-6 text-right text-uppercase">
+                        <h2 class="transform-heading-text">Anshuman Upadhyay</h2>
+                        <h3 class="transform-subheading-text">Front-end Ninja</h3>
+                    </div>
                 </div>
-            </div>
-        </div>
-    </div>
+
+            </section>
+
+            <section id="demarcator">
+                <h6 class="display-none">Dodging Content</h6>
+
+                <div class="row">
+                    <div class="col-xs-12">
+                        <hr class="line-width">
+                    </div>
+                </div>
+
+            </section>
+
+            <section id="Hero">
+                <h6 class="display-none">Dodging Content</h6>
+
+                <div class="row">
+                    <div class="col-xs-12">
+
+                        <picture >
+                            <source class="img-responsive transit" srcset="https://anshup7.github.io/portfolio/project/images/frt450.png" media="(max-width: 750px)" >
+                                <source class="img-responsive transit" srcset="https://anshup7.github.io/portfolio/project/images/frontend.png" media="(min-width: 751px)" >
+                                    <img class="img-responsive transit" src="http://placekitten.com/555/305" alt=" Central Hero Image for my portfolio. It contains simply the frontend theme image.">
+                                </picture>
+
+                            </div>
+                        </div>
+
+                    </section>
+
+                    <section id="featured-work">
+                        <h6 class="display-none">Dodging Content</h6>
+
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <h2 class="featured-color featured-text-responsive">Featured Work</h2>
+                            </div>
+                        </div>
+                        <div class="row align">
+                            <div class="col-xs-4">
+                                <figure>
+
+                                    <img class="img-responsive featured-image" data-toggle="modal" data-target="#project1" src="./images/cakephp.png" alt="Cake PHP logo Image shown in the leftmost part of featured work section">
+                                    <figcaption >
+
+                                        <h3 class=" text-uppercase responsive-caption-text text-align">CakePHP</h3>
+                                        <p><a class="responsive-link-1 text-align-link" href="https://github.com/projects/cakephp"><i class="fa fa-github" aria-hidden="true"></i></a></p>
+
+                                    </figcaption>
+
+                                </figure>
+                            </div>
+                            <div class="col-xs-4">
+                                <img class="img-responsive featured-image" data-toggle="modal" data-target="#project2" src="./images/php.png" alt="PHP logo Image shown in the middle part of featured work section">
+                                <h3 class=" text-uppercase responsive-caption-text text-align">PHP-AJAX</h3>
+                                <p><a class="responsive-link-2 text-align-link" href="https://github.com/projects/php"><i class="fa fa-github" aria-hidden="true"></i></a></p>
+                            </div>
 
 
-    <div class="container">
+                            <div class="col-xs-4">
+                                <img class="img-responsive featured-image" data-toggle="modal" data-target="#project3" src="./images/c++.png" alt="C++ logo Image shown in the rightmost part of featured work section" style="float: rigth;">
+                                <h3 class="text-uppercase responsive-caption-text text-align-c">C++ Graphics</h3>
+                                <p><a class="responsive-link-3 text-align-link" href="https://github.com/projects/c++"><i class="fa fa-github" aria-hidden="true"></i></a></p>
+                            </div>
 
-        <div class="row setting">
-            <div class="col-xs-6"><img class="img-responsive logo-size" src="https://anshup7.github.io/portfolio/project/bootstrap-prestructure_files/logo/udacity-logo.jpg" alt="logo"></div>
-            <div class="col-xs-6 text-right text-uppercase">
-                <h1 class="transform-heading-text">Anshuman Upadhyay</h1>
-                <h3 class="transform-subheading-text">Front-end Ninja</h3>
-            </div>
-        </div>
+                        </div>
 
-        <div class="row">
-            <div class="col-xs-12">
-                <hr class="line-width">
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-xs-12">
+                    </section>
 
-                <picture >
-                    <source class="img-responsive transit" srcset="https://anshup7.github.io/portfolio/project/images/frt450.png" media="(max-width: 750px)" alt="Smaller version of Hero Image related to the Front End Web Developer Portfolio">
-                    <source class="img-responsive transit" srcset="https://anshup7.github.io/portfolio/project/images/frontend.png" media="(min-width: 751px)" alt="Mid-length version of Hero Image related to the Front End Web Developer Portfolio">
-                    <img class="img-responsive transit" src="http://placekitten.com/555/305" alt=" Central Hero Image for my portfolio. It contains simply the frontend theme image.">
-                </picture>
+                </div>
 
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-xs-12">
-                <h2 class="featured-color featured-text-responsive">Featured Work</h2>
-            </div>
-        </div>
-        <div class="row text-center ">
-            <div class="col-xs-4">
-                <img class="img-responsive" data-toggle="modal" data-target="#project1" src="./images/cakephp.png">
-                <h3 class=" text-uppercase responsive-caption-text">CakePHP</h3>
-                <p><a class="responsive-link-1 " href="https://github.com/projects/cakephp"><i class="fa fa-github" aria-hidden="true"></i>
-</a></p>
-            </div>
-            <div class="col-xs-4">
-                <img class="img-responsive" data-toggle="modal" data-target="#project2" src="./images/php.png">
-                <h3 class=" text-uppercase responsive-caption-text">PHP-AJAX</h3>
-                <p><a class="responsive-link-2 " href="https://github.com/projects/php"><i class="fa fa-github" aria-hidden="true"></i>
-</a></p>
-            </div>
+            </section>
 
 
-            <div class="col-xs-4">
-                <img class="img-responsive" data-toggle="modal" data-target="#project3" src="./images/c++.png">
-                <h3 class="text-uppercase responsive-caption-text">C++ Graphics</h3>
-                <p><a class="responsive-link-3 " href="https://github.com/projects/c++"><i class="fa fa-github" aria-hidden="true"></i>
-</a></p>
-            </div>
+            <footer class="footer">
+                <div class="container">
+                    <div class="row">
 
-        </div>
+                        <div class="col-xs-4">
+                        </div>
 
-    </div>
+                        <div class="col-xs-4">
+                            <p>
+                                <a href="http://jigsaw.w3.org/css-validator/check/referer">
+                                    <img style="border:0;width:88px;height:31px"
+                                    src="http://jigsaw.w3.org/css-validator/images/vcss-blue"
+                                    alt="Valid CSS!" />
+                                </a>
+                            </p>
+                        </div>
 
+                        <div class="col-xs-4">
+                        </div>
 
-
-</body>
+                    </div>
+                </div>
+            </footer>
+    </body>
 </html>
