@@ -1,0 +1,10 @@
+<!-- From admin html,was for giving the type of dropdown menu-->
+  <ul class = "dropdown-menu pull-right" role = "menu">
+      <li id="students">Students</li>
+      <li id="messcommittee">Mess Committee</li>
+      <li id="warden">Warden</li>
+      <li id="messsupervisor">Mess Supervisor</li>
+      
+      <li class = "divider"></li>
+      <li><a href = "#">Home page</a></li>
+   </ul>

@@ -1,0 +1,167 @@
+@import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
+
+
+.users.form.large-4.medium-4.columns.content.login {
+	margin-left: 30%;
+}
+.auth-name {
+	color: #fff;
+	vertical-align: middle;
+	/* padding-top: 6%; */
+	padding: 6% 10px 0 0;
+}
+
+.glaems_heading_style {
+	font-size: 30px;
+	height: 2.8125rem;
+	margin: 0;
+	color: #e7dc9cb3;
+}
+#au-change{
+	background-color: #EFAE12;
+	font-family: Junction;
+}
+
+legend {
+    background-color : rgba(176, 176, 195, 1);
+}
+
+#disable{
+	pointer-events: none;
+	opacity: 0.5;
+}
+img {
+    border: 1px solid rgba(197, 231, 23, 1);
+    border-radius: 5px;
+    padding: 5px;
+	align: center;
+    width: 100px;
+}
+
+
+
+
+label {
+	color: #1798A5;
+	cursor: pointer;
+	display: block;
+	font-size: 0.875rem;
+	font-weight: normal;
+	line-height: 1.5;
+	margin-bottom: 0;
+}
+
+#scaleatadd{
+
+	width : 960px;
+    height : 500px;
+
+
+}
+
+marquee{
+		width : 700px;
+}
+
+body {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 400;
+	font-size: 14px;
+	color: #555;
+}
+
+.side-nav {
+    font-family: 'Montserrat', sans-serif;
+	font-weight: 400;
+	font-size: 14px;
+	color: #555;
+}
+
+.disabled {
+	pointer-events: none;
+	cursor: initial;
+	color: black;
+}
+
+/* Tooltip container */
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+
+    /* Position the tooltip text */
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -60px;
+
+    /* Fade in tooltip */
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+/* Tooltip arrow */
+.tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+	}
+	button {
+		background: #116d76;
+	}
+	.form button:hover, .form button:focus {
+		background: #135a62;
+		box-shadow: none;
+	}
+	@keyframes example {
+    0%   {color:red; left:0px; top:0px; }
+
+
+    75%  {color:green; left:20px; top:0px; }
+    100% {color:red; left:0px; top:0px; }
+}
+@keyframes example2 {
+    0%   {color:black; left:300px; top:0px;}
+
+    100% {color:black; left:300px; top:250px;}
+}
+	#animation {
+
+	    position: relative;
+	    color: black;
+	    animation-name: example;
+	    animation-duration: 4s;
+	    animation-iteration-count: infinite;
+	}
+
+	#animation2 {
+
+	    position: relative;
+	    color: black;
+	    animation-name: example2;
+	    animation-duration: 4s;
+	    animation-iteration-count: infinite;;
+	}

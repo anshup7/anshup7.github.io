@@ -1,0 +1,17 @@
+<?= $this->Html->script('qrcode/src/grid.js') ?>
+<?= $this->Html->script('qrcode/src/version.js') ?>
+<?= $this->Html->script('qrcode/src/detector.js') ?>
+<?= $this->Html->script('qrcode/src/formatinf.js') ?>
+<?= $this->Html->script('qrcode/src/errorlevel.js') ?>
+<?= $this->Html->script('qrcode/src/bitmat.js') ?>
+<?= $this->Html->script('qrcode/src/datablock.js') ?>
+<?= $this->Html->script('qrcode/src/bmparser.js') ?>
+<?= $this->Html->script('qrcode/src/datamask.js') ?>
+<?= $this->Html->script('qrcode/src/rsdecoder.js') ?>
+<?= $this->Html->script('qrcode/src/gf256poly.js') ?>
+<?= $this->Html->script('qrcode/src/gf256.js') ?>
+<?= $this->Html->script('qrcode/src/decoder.js') ?>
+<?= $this->Html->script('qrcode/src/qrcode.js') ?>
+<?= $this->Html->script('qrcode/src/findpat.js') ?>
+<?= $this->Html->script('qrcode/src/alignpat.js') ?>
+<?= $this->Html->script('qrcode/src/databr.js') ?>

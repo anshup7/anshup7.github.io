@@ -1,0 +1,5 @@
+{
+    "require": {
+        "dereuromark/cakephp-ajax": "dev-master"
+    }
+}

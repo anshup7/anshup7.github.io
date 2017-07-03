@@ -1,0 +1,53 @@
+
+
+.heading{
+	 background-color:#2691d9;
+	 border-radius:10px;
+	 padding:50px;
+	
+	 }
+
+h1:first-letter{
+	   font-size:50px;
+}
+
+.linkhover{
+	  text-decoration:none;
+	  color:black;
+	 
+	  font-size:18px;
+	  font-style:italic;
+	  font-weight:bold;
+	  
+}
+
+.space{
+	  width:10px;
+}
+
+a:hover{ 
+	  text-decoration:none;
+	   
+	   color:white;
+}
+
+.alignb{
+	  right:500px;
+}
+
+footer{ 
+	   border-style:solid;
+	   border-radius:4px;
+	   background-color:#00ced1;
+	   position:fixed;
+	   bottom:0px;
+	   width:100%;
+	   text-align:center;
+	  
+}
+
+
+
+
+
+

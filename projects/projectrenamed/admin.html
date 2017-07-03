@@ -1,0 +1,90 @@
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <title>Administrator(H.U.T.S)</title>
+        <link rel="stylesheet" href="admin.css"/>
+      <link href = "bootstrap/css/bootstrap.min.css" 
+         rel = "stylesheet">
+         <script src="jquery/jquery.min.js"></script>
+         <script src="bootstrap/js/bootstrap.min.js"></script>
+        <script src="forward.js" type="text/javascript"></script> <!-- for taking the request to the PHP page on click-->
+        <script src="delete.js" type="text/javascript"></script><!-- for deleting the user entry on click-->
+        <script src="progressbar.js" type="text/javascript"></script>  <!-- ajax code to print the progress bar using PHP-->
+        <link rel="shortcut icon" href="huts.ico"/>
+       
+       
+    </head>
+ <body onmouseover="progressbar()" onload="progressbar()">  <!--Calling progress bar code for printing it on the page load-->
+      
+   <header class="heading" > <!-- This class defines all of the banner element styles -->
+       <h1 >ADMIN <small>PANEL</small></h1>
+        
+        
+       </header>
+     
+    <!-- ########################################LIST OF MEM################################################-->
+         <!-- Coded here is the nav bar-justified thing,that is the navigation unit just below the blue head(1)-->
+          <div class="container"><!-- container of tab nav-->
+          <ul class="nav nav-pills nav-justified">
+          <li>
+         <button type = "button" class = "btn btn-link " data-toggle = "dropdown" align="right" onclick="ajaxFunction()">
+      Students
+       </button> 
+       </li>
+        
+        <li> 
+      
+        <button type = "button" class = "btn btn-link " data-toggle = "dropdown" align="right" onclick="ajaxFunction()">
+      Wardens 
+       </button>  
+   
+         </li> 
+         <li>     
+        <button type = "button" class = "btn btn-link" data-toggle = "dropdown" align="right" onclick="ajaxFunction()">
+     MessSupervisor 
+      </button>  
+       </li>
+        
+        <li>
+   <button type = "button" class = "btn btn-link" data-toggle = "dropdown" align="right" onclick="ajaxFunction()">
+      SubAdmins
+     
+   </button>  
+     </li>
+     </ul>
+   </div>
+<!-- Nav tab code ends here,contains only one ul and li's for the buttons -->
+
+    
+    <!-- ########################################################################################-->
+    
+    
+        
+</br><!-- so that a bit below the table is printed-->                                
+   
+<!-- The code to forward to apply ajax ends here-->
+     
+    <!--</header>-->
+     
+     
+         <div id="displayTable" style="overflow-x:auto; overflow-y:auto;">Your progress bar needs to refreshed,check if it can be automated too.</div>
+         
+       
+     
+    <footer align="bottom">
+		<p><a href="http://172.16.18.112/projectrenamed/Abhishek/home.html" target="_other">&copy; H.U.T.S <small>2016</small></a></p>
+           <div class="container"> <!-- Progress Bar coding starts here -->
+  
+  <div  id="progressb">
+    </div>
+  </div>
+<!--</div>-->
+        </footer>
+
+		
+		
+    
+     
+ </body>
+ </html>

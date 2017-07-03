@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>H.U.T.S.</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+  <script src="jquery/jquery.min2.js"></script>
+  <script src="bootstrap/bootstrap.min.js"></script>
+  <script>
+$(document).ready(function(){
+    $("#hide").click(function(){
+        $(".studentshow").hide();
+		$(".messshow").show();
+		$(".smshow").show();
+    });
+    $("#show").click(function(){
+        $(".studentshow").show();
+		$(".messshow").hide();
+		$(".smshow").show();
+    });
+});
+</script>
+
+</head>
+<body>
+	<header style="background-color: #2691d9; border-radius: 10px; padding: 20px;" height="75px">
+	<div class="container">
+		<div class="col-sm-7"></div>
+		<div class="col-sm-5">
+		<form class="form-inline" role="form" action="signin.php" method="post">
+			<input type="text" class="form-control" name="signinusername" placeholder="Username"/>
+			<input type="password" class="form-control" name="signinpassword" placeholder="Password"/>
+			<input type="submit" class="form-control btn btn-primary" name="signin_submit" value="Submit"/>
+		</div>
+		</form>
+	</div>			
+	</header>
+		<div class="col-sm-1">
+			<a href="link1.html"><img src="menu.png" alt="" width="176" height="144"/></a>
+		</div>
+		<div class="col-sm-1"></div>
+		<div class="col-sm-1">
+			<a href="link2.html"><img src="bill.png" alt="" width="212" height="156" /></a>
+		</div>
+		<div class="col-sm-1"></div>
+		<div class="col-sm-1">
+			<a href="link3.html"><img src="wastage.png" alt="" width="218" height="130"/></a></p>
+		</div>
+		<div class="col-sm-2"></div>
+
+	
+   <div class="col-sm-5"style="padding-right:15px; padding-left:15px; border:normal" >
+		<h2>Create an Account</h2>
+  <form class="form-horizontal" role="form" action="signin.php" method="post">
+    <div class="form-group">
+      <div class="col-sm-6">
+        <input type="text" class="form-control" name="firstname" placeholder="First Name"/>
+    </div>
+    <div class="col-sm-6">          
+        <input type="text" class="form-control" name="surname" placeholder="Surname"/>
+      </div>
+    </div>
+    <div class="form-group">  
+		<div class="col-sm-12">
+			<input type="email" class="form-control" id="email" placeholder="Email Address" name="mail"/>
+		</div>
+    </div>
+	<div class="form-group"> 
+		<div class="col-sm-3">
+		<select name="Month"  class="form-control">
+			<option> - Month - </option>
+			<option value="January">January</option>
+			<option value="Febuary">Febuary</option>
+			<option value="March">March</option>
+			<option value="April">April</option>
+			<option value="May">May</option>
+			<option value="June">June</option>
+			<option value="July">July</option>
+			<option value="August">August</option>
+			<option value="September">September</option>
+			<option value="October">October</option>
+			<option value="November">November</option>
+			<option value="December">December</option>
+		</select>
+		</div>
+		<div class="col-sm-2">
+		<select name="Day"  name="Day" class="form-control">
+			<option> - Day - </option>
+				<option value="1">1</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				<option value="4">4</option>
+				<option value="5">5</option>
+				<option value="6">6</option>
+				<option value="7">7</option>
+				<option value="8">8</option>
+				<option value="9">9</option>
+				<option value="10">10</option>
+				<option value="11">11</option>
+				<option value="12">12</option>
+				<option value="13">13</option>
+				<option value="14">14</option>
+				<option value="15">15</option>
+				<option value="16">16</option>
+				<option value="17">17</option>
+				<option value="18">18</option>
+				<option value="19">19</option>
+				<option value="20">20</option>
+				<option value="21">21</option>
+				<option value="22">22</option>
+				<option value="23">23</option>
+				<option value="24">24</option>
+				<option value="25">25</option>
+				<option value="26">26</option>
+				<option value="27">27</option>
+				<option value="28">28</option>
+				<option value="29">29</option>
+				<option value="30">30</option>
+				<option value="31">31</option>
+			</select>
+			</div>
+			<div class="col-sm-4">
+			<select name="Year" id="Year" class="form-control">
+				<option> - Year - </option>
+				<option value="2006">2006</option>
+				<option value="2005">2005</option>
+				<option value="2004">2004</option>
+				<option value="2003">2003</option>
+				<option value="2002">2002</option>
+				<option value="2001">2001</option>
+				<option value="2000">2000</option>
+				<option value="1999">1999</option>
+				<option value="1998">1998</option>
+				<option value="1997">1997</option>
+				<option value="1996">1996</option>
+				<option value="1995">1995</option>
+				<option value="1994">1994</option>
+				<option value="1993">1993</option>
+				<option value="1992">1992</option>
+				<option value="1991">1991</option>
+				<option value="1990">1990</option>
+				<option value="1989">1989</option>
+				<option value="1988">1988</option>
+				<option value="1987">1987</option>
+				<option value="1986">1986</option>
+				<option value="1985">1985</option>
+				<option value="1984">1984</option>
+				<option value="1983">1983</option>
+				<option value="1982">1982</option>
+				<option value="1981">1981</option>
+				<option value="1980">1980</option>
+				<option value="1979">1979</option>
+				<option value="1978">1978</option>
+				<option value="1977">1977</option>
+				<option value="1976">1976</option>
+				<option value="1975">1975</option>
+				<option value="1974">1974</option>
+				<option value="1973">1973</option>
+				<option value="1972">1972</option>
+				<option value="1971">1971</option>
+				<option value="1970">1970</option>
+				<option value="1969">1969</option>
+				<option value="1968">1968</option>
+				<option value="1967">1967</option>
+				<option value="1966">1966</option>
+				<option value="1965">1965</option>
+				<option value="1964">1964</option>
+				<option value="1963">1963</option>
+				<option value="1962">1962</option>
+				<option value="1961">1961</option>
+				<option value="1960">1960</option>
+				<option value="1959">1959</option>
+				<option value="1958">1958</option>
+				<option value="1957">1957</option>
+				<option value="1956">1956</option>
+				<option value="1955">1955</option>
+				<option value="1954">1954</option>
+				<option value="1953">1953</option>
+				<option value="1952">1952</option>
+				<option value="1951">1951</option>
+				<option value="1950">1950</option>
+				<option value="1949">1949</option>
+				<option value="1948">1948</option>
+				<option value="1947">1947</option>
+			</select>
+			</div>
+	</div>
+    <div class="form-group">        
+      <div class=" col-sm-4">
+        <input type="radio" name="radioon" id="show" value="Student"/>&nbsp;Student
+	</div>
+		<div class="col-sm-6">
+		<input type="radio" name="radioon" id="hide" value="Mess"/>&nbsp;Hostel/Mess Member
+      </div>
+    </div>
+	<div class="form-group studentshow" style="display:none">
+		<div class="col-sm-4">
+			<select name="hostel" id="hostel" class="form-control">
+						<option value="A-Block">A-Block</option>
+						<option value="B-Block">B-Block</option>
+						<option value="C-Block">C-Block</option>
+						<option value="D-Block">D-Block</option>
+						<option value="E-Block">E-Block</option>
+						<option value="F-Block">F-Block</option>
+						<option value="G-Block">G-Block</option>
+						<option value="H-Block">H-Block</option>
+						<option value="I-Block">I-Block</option>
+						<option value="J-Block">J-Block</option>
+						<option value="Godavari">Godavari</option>
+						<option value="Kalpana Chawla">Kalpana Chawla</option>
+						<option value="Ganga">Ganga</option>
+						<option value="Yamuna">Yamuna</option>
+			</select>
+		</div>
+		<div class="col-sm-4" >          
+			<input type="text" class="form-control" name="roomnumber" placeholder="Room No."/>
+		</div>
+		<div class="col-sm-4" >
+			<select name="course" id="course" class="form-control">
+						<option value="B.Tech">B.Tech</option>
+						<option value="MCA">MCA</option>
+						<option value="BCA">BCA</option>
+						<option value="Polytechnic">Polytechnic</option>
+						<option value="B.Sc.">B.Sc.</option>
+						<option value="B.Pharma">B.Pharma</option>
+			</select>
+		</div>
+	</div>
+	<div class="form-group studentshow" style="display:none">
+		<div class="col-sm-4" >
+			<select name="branch" id="branch" class="form-control" name="branchstd">
+						<option value="Computer Science Engineering">Computer Science Engineering</option>
+						<option value="Mechanical Engineering">Mechanical Engineering</</option>
+						<option value="Civil Engineering">Civil Engineering</</option>
+						<option value="Electrical Engineering">Electrical Engineering</</option>
+			</select>
+		</div>
+		<div class="col-sm-4" >
+			<select name="acadyear" id="year" class="form-control">
+						<option value="1st">1st</option>
+						<option value="2nd">2nd</</option>
+						<option value="3rd">3rd</</option>
+						<option value="4th">4th</</option>
+			</select>
+		</div>
+		<div class="col-sm-4" >          
+			<input type="text" class="form-control" name="univno" placeholder="Univ Number"/>
+		</div>
+	</div>
+	<div class="form-group studentshow" style="display:none">
+		<div class="col-sm-12" "studentshow">
+				<input type="text" class="form-control" name="username" placeholder="Username"/><!--&nbsp;&nbsp;<style="font-weight:200">Must be your Univ Number</style>-->
+		</div>
+	</div>
+	<div class="form-group studentshow" style="display:none">
+		<div class="col-sm-12" >
+				<input type="password" class="form-control" name="password" placeholder="Password" maxlength="16"/>
+		</div>
+	</div>
+	<div class="form-group studentshow" style="display:none">
+		<div class="col-sm-12">
+				<input type="password" class="form-control" name="repassword" placeholder="Re-enter Password" maxlength="16"/>
+		</div>
+	</div>
+	<!--For mess/hostel members-->
+	<div class="form-group messshow" style="display:none">
+		<div class="col-sm-12">
+			<input type="text" class="form-control" placeholder="Corrspondance Address" name="addr"/>
+		</div>
+	</div>
+	<div class="form-group messshow" style="display:none">
+		<div class="col-sm-4">
+			<select required name="hostel" id="hostel" class="form-control">
+						<option value="A-Block">A-Block</option>
+						<option value="B-Block">B-Block</option>
+						<option value="C-Block">C-Block</option>
+						<option value="D-Block">D-Block</option>
+						<option value="E-Block">E-Block</option>
+						<option value="F-Block">F-Block</option>
+						<option value="G-Block">G-Block</option>
+						<option value="H-Block">H-Block</option>
+						<option value="I-Block">I-Block</option>
+						<option value="J-Block">J-Block</option>
+						<option value="Godavari">Godavari</option>
+						<option value="Kalpana Chawla">Kalpana Chawla</option>
+						<option value="Ganga">Ganga</option>
+						<option value="Yamuna">Yamuna</option>
+			</select>
+		</div>
+		<div class="col-sm-4" >          
+			<input type="text" class="form-control" name="mobile" placeholder="Mobile No."/>
+		</div>
+		<div class="col-sm-4" >          
+			<input type="text" class="form-control" name="univname" placeholder="Univ ID"/>
+		</div>
+	</div>
+	<div class="form-group messshow" style="display:none">        
+		<div class=" col-sm-4">
+			<input type="radio" name="member" id="mess"/>&nbsp;Mess Member
+		</div>
+		<div class="col-sm-6">
+			<input type="radio" name="member" id="Hostel"/>&nbsp;Hostel Member
+		</div>
+	</div>
+	<div class="form-group smshow" style="display:none">
+		<div class="col-sm-4"></div>
+		<div class="col-sm-2">
+			<input type="submit" class="form-control btn btn-primary" name="submit" value="Submit" />
+		</div>
+		<div class="col-sm-2">
+			<input type="reset" class="form-control btn btn-primary" name="reset" value="Reset" />
+		</div>
+		<div class="col-sm-4"></div>
+	</div>
+  </form>
+</div>	
+
+</body>
+</html>
