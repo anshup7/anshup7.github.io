@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Neighborhood Map</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+	<script src="https://anshup7.github.io/resources/knockout/knockout.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script async defer  src="js/map.js"></script>	
+	<script async defer  src="js/script.js"></script>
+	<script async defer src="https://use.fontawesome.com/f4f12588a1.js"></script>	
+	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBjHQToyYkdlWgy4LMfqZmaELMTTy7K59s&libraries=drawing,geometry&v=3&callback=initMap"></script>
+	<meta charset="utf-8">
+</head>
+<body>
+		<div class="options-box">
+			
+			
+			<h3 style="color: #eee" class="heading">My Neighborhood Map</h3>
+
+			<input type="text" class="search_field_css" id="search_field" data-bind="value: searchText">
+			<input type="button" id="search_button" value="&#128269; Search" data-bind="enable: enableButton">
+
+
+			<ul id="data">
+				<li id="1" style="color: #eee" data-bind="text: value1" onclick="wiki('Indirapuram')"></li>
+				<li id="2" style="color: #eee" data-bind="text: value2" onclick="wiki('Indirapuram')"></li>
+				<li id="3" style="color: #eee" data-bind="text: value3" onclick="wiki('Indirapuram')"></li>
+				<li id="4" style="color: #eee" data-bind="text: value4" onclick="wiki('Indirapuram')"></li>
+				<li id="5" style="color: #eee" data-bind="text: value5" onclick="wiki('Indirapuram')"></li>
+			</ul> 
+		</div>
+
+		<div id="map"></div>
+		
+
+			
+			
+				
+
+			
+
+					
+
+	
+	
+</body>
+
+</html>
