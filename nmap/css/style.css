@@ -13,10 +13,18 @@ body {
     box-sizing: border-box;
 }
 
+
  #map {
  	height: 100%;
  	width: 100%;
- 	/*text-align: right;*/
+ }
+
+ .heading {
+ 	cursor: pointer;
+ }
+
+ .search_field_css {
+ 	width: 60%;
  }
 
  ul {
@@ -39,21 +47,27 @@ body {
 
 @media screen and (max-width: 1064px) {
 	.search_field_css {
-		width: 150px;
+		width: 50%;
 		transition: 2s ease;
 	}
 }
 
 @media screen and (max-width: 818px) {
 	.search_field_css {
-		width: 100px;
+		width: 40%;
 		transition: 2s ease;
+	}
+}
+@media screen and (max-width: 593px) {
+	.heading {
+		font-size: .95em;
+		transition: 1s ease;
 	}
 }
 
 @media screen and (max-width: 457px) {
 	.search_field_css {
-		width: 50px;
+		width: 30%;
 		transition: 2s ease;
 	}
 
@@ -63,10 +77,20 @@ body {
 	}
 }
 
+@media screen and (max-width: 367px) {
+	.heading {
+		font-size: .7em;
+		transition: 1s ease;
+	}
+
+	.search_field_css {
+		width: 20%;
+		transition: 2s ease;
+	}
+}
 
 
 
 
 
-/*Note that the above styles are mandatory to make the google map up and running. "#map is the place where 
-map is being displayed. The parent elements of the map container are html and body"*/
+

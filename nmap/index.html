@@ -1,49 +1,51 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-	<title>Neighborhood Map</title>
-	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
-	<script src="https://anshup7.github.io/resources/knockout/knockout.js"></script>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-	<script async defer  src="js/map.js"></script>	
-	<script async defer  src="js/script.js"></script>
-	<script async defer src="https://use.fontawesome.com/f4f12588a1.js"></script>	
-	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBjHQToyYkdlWgy4LMfqZmaELMTTy7K59s&libraries=drawing,geometry&v=3&callback=initMap"></script>
-	<meta charset="utf-8">
+    <title>Neighborhood Map</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+    <link rel="icon" type="image/png" href="./images/neigh.ico">
+    <script src="https://anshup7.github.io/resources/knockout/knockout.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script  src="js/map.js"></script>
+    <script  src="js/script.js"></script>
+    <script  src="https://use.fontawesome.com/f4f12588a1.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBjHQToyYkdlWgy4LMfqZmaELMTTy7K59s&v=3&callback=initMap"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
 </head>
+
 <body>
-		<div class="options-box">
-			
-			
-			<h3 style="color: #eee" class="heading">My Neighborhood Map</h3>
-
-			<input type="text" class="search_field_css" id="search_field" data-bind="value: searchText">
-			<input type="button" id="search_button" value="&#128269; Search" data-bind="enable: enableButton">
-
-
-			<ul id="data">
-				<li id="1" style="color: #eee" data-bind="text: value1" onclick="wiki('Indirapuram')"></li>
-				<li id="2" style="color: #eee" data-bind="text: value2" onclick="wiki('Indirapuram')"></li>
-				<li id="3" style="color: #eee" data-bind="text: value3" onclick="wiki('Indirapuram')"></li>
-				<li id="4" style="color: #eee" data-bind="text: value4" onclick="wiki('Indirapuram')"></li>
-				<li id="5" style="color: #eee" data-bind="text: value5" onclick="wiki('Indirapuram')"></li>
-			</ul> 
-		</div>
-
-		<div id="map"></div>
 		
+		    <div class="options-box">
 
-			
-			
-				
 
-			
+		        <!-- click on the web page here to reload -->
+		        <h3 style="color: #eee" class="heading" onclick="location.reload()"><i class="fa fa-ravelry" aria-hidden="true"></i> My Neighborhood Map</h3> 
 
-					
+		        <input type="text" class="search_field_css" id="search_field" data-bind="value: searchText">
+		        <input type="button" id="search_button" class="search_button_css" value="&#9730; Filter" data-bind="click: searchButton">
+
+		        <!-- Following "li" fields render data from the line 91 of script.js -->
+		        <ul id="data">
+		            <li id="1" style="color: #eee" data-bind="text: value1, visible: isVisible1, click: markerInit(this.id)"></li>
+		            <li id="2" style="color: #eee" data-bind="text: value2, visible: isVisible2, click: markerInit(this.id)"></li>
+		            <li id="3" style="color: #eee" data-bind="text: value3, visible: isVisible3, click: markerInit(this.id)"></li>
+		            <li id="4" style="color: #eee" data-bind="text: value4, visible: isVisible4, click: markerInit(this.id)"></li>
+		            <li id="5" style="color: #eee" data-bind="text: value5, visible: isVisible5, click: markerInit(this.id)"></li>
+		        </ul>
+
+		    </div>
+		    <!-- The map is rendered below -->
+		    <div id="map"></div>
 
 	
-	
+
+
+
+
+
 </body>
 
 </html>
