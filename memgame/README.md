@@ -23,12 +23,12 @@ The app uses concepts of Vanilla Js and Jquery to derive its functionality. The 
 
 >The square concept is used. In each pair First element's id's square is the id of the second element of that pair.
 
-			```<li class="card" id="3" onclick="findPair(this.id)"> <!--First element -->
+			<li class="card" id="3" onclick="findPair(this.id)"> <!--First element -->
                 <i class="fa fa-paper-plane-o "></i>  
             </li>
 			<li class="card" id="9" onclick="findPair(this.id)">    <!-- Second Element -->
                 <i class="fa fa-paper-plane-o "></i>
-            </li> ```
+            </li> 
 
 >Note: The squares and their square roots are taken unique
 
@@ -38,11 +38,11 @@ The app uses concepts of Vanilla Js and Jquery to derive its functionality. The 
 
 >This is done by a simple tweak. A squares array is formed which contains all the squares that exist as id(s).
   
-   ```var squares = ["4","9","36","25","49","64","100","121"];```  
+	var squares = ["4","9","36","25","49","64","100","121"];  
 
 >Now whenever a card is clicked, the id of *this* element is squared and checked in the *squares* array. If the square is present then the DOM is triggered by this found value, else the square root is taken.
 
-```var tempVar = String(id * id); //Need to use String for performing matching with inArray().
+	var tempVar = String(id * id); //Need to use String for performing matching with inArray().`
 	//Below is the simple logic to find the pairs
 	if(jQuery.inArray(tempVar, squares) !== -1) { // inArray() returns the indexOf found value else -1
 
@@ -54,7 +54,9 @@ The app uses concepts of Vanilla Js and Jquery to derive its functionality. The 
 
 
 		secondElement = Math.sqrt(id); 
-	}```
+	}
+
+
 
 ## Steps to open the Application
 
