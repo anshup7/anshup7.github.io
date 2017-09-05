@@ -1,6 +1,7 @@
 var card = {
     showing: false, //Determines If any card has been shown?
-    currentlyOpened: "" //The card id against which another card is needed to be compared
+    currentlyOpened: "", //The card id against which another card is needed to be compared
+    onlyClicked: ""
 };
 var squares = ["4", "9", "36", "25", "49", "64", "100", "121"];
 var moves = 0;
@@ -133,6 +134,7 @@ function removeAttribute(id) {
 function resetCardObject() {
     card.showing = false;
     card.currentlyOpened = "";
+    card.onlyClicked = "";
 }
 
 
@@ -170,12 +172,6 @@ function updateMove() {
 
 function findPair(id) {
     var secondElement;
-
-    if(card.currentlyOpened === id) {
-    	resetGameState(id);
-    	return;
-    }
-
     var tempVar = String(id * id); //Need to use String for performing matching with inArray().
     //Below is the simple logic to find the pairs
     if (jQuery.inArray(tempVar, squares) !== -1) { // inArray() returns the indexOf found value else -1
@@ -196,6 +192,7 @@ function findPair(id) {
         $("#" + id).addClass("show");
         card.showing = true;
         card.currentlyOpened = id;
+        card.onlyClicked = id; //Very Imp to prohibit move updates on same card clicks.
         updateMove(); //To update number of moves
 
 
@@ -212,11 +209,18 @@ function findPair(id) {
 
 
         } else {
+
             $("#" + id).addClass("show");
-            updateMove(); //To update number of moves
-            setTimeout(function () {
-                resetGameState(id)
-            }, 700); //will be called when some card is already opened and the second card doesn't matches with the previously opened one.
+
+            if(card.onlyClicked !== id) { //This else part is called when some part is clicked earlier. If second click is on the same card then this part will execute.
+
+            	updateMove(); //To update number of moves
+
+	            setTimeout(function () {
+	                resetGameState(id)
+	            }, 200); //will be called when some card is already opened and the second card doesn't matches with the previously opened one.
+            }
+
 
         }
     }
