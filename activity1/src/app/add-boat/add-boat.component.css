@@ -1,0 +1,15 @@
+.input-sup {
+    position: relative;
+}
+
+.icon {
+    position: absolute;
+    padding-top: 0.5em;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    color: #28845e;
+}
+
+.input-field {
+    padding-left: 2em;
+}

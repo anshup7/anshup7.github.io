@@ -1,0 +1,41 @@
+<div class="card card-style" style="width:70%;" style="float:right;">
+    <img class="card-img-top img-responsive image-settings" [src]="source" alt="Card image cap">
+    <div class="card-body">
+        <h3 class="card-title">Showing all the operational boats across India!.</h3>
+        <table class="table table-hover">
+            <thead>
+                <th>Boat Id:</th>
+                <th>Location:</th>
+                <th>Allowed Days:</th>
+
+            </thead>
+            <tr *ngFor="let boat of boatData">
+                <td #boatId>{{boat.boatId}}</td>
+                <td>{{boat.location}}</td>
+                <td>{{boat.allowedDays}}</td>
+                <td><button class="btn btn-success" (click)="displayBoat(boat)"><i class="fa fa-get-pocket fa-med grey-ico" aria-hidden="true"></i> <span>Book now!</span></button></td>
+            </tr>
+
+
+
+
+
+        </table>
+        <div align="center">
+
+            <button type="button" class="btn btn-success btn-lg" (click)="addBoat()"><i class="fa fa-plus-circle grey-ico" aria-hidden="true"></i> Add a new boat</button>
+        </div>
+        <!-- when the user clicks on any row button the following div is displayed -->
+        <div class="panel panel-warning" *ngIf="show">
+            <app-boat-details [dispBoat]="dispBoat"></app-boat-details>
+        </div>
+
+        <div class="panel panel-success" *ngIf="addRequest">
+            <app-add-boat></app-add-boat>
+        </div>
+
+
+    </div>
+
+
+</div>

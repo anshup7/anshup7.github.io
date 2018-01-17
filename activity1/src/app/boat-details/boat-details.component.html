@@ -1,0 +1,24 @@
+<div *ngIf="dispBoat != undefined && displayDetail && !updatePrompt">
+    <div class="panel-heading">{{dispBoat.boatType}}</div>
+    <div class="panel-body">
+        <table class="table table-hover">
+            <tr>
+                <th>Base Price: </th>
+                <th>Booking Starts</th>
+                <th>Description</th>
+
+            </tr>
+
+            <tr>
+                <td><i class="fa fa-inr" aria-hidden="true"></i> {{dispBoat.basePrice}}</td>
+                <td>{{dispBoat.dateBooking | date:'fullDate'}}</td>
+                <td>{{dispBoat.description}}</td>
+            </tr>
+        </table>
+        <button type="button" class="btn btn-danger" (click)="modifyDom(dispBoat)">Update Details</button>
+    </div>
+</div>
+
+<div *ngIf="updatePrompt">
+    <app-boat-update [updateableBoatDetail]="sendingBoatObj" [showForm]="updatePrompt"></app-boat-update>
+</div>

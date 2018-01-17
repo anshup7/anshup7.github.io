@@ -1,0 +1,131 @@
+<div class="panel-body">
+    <span class="panel-text"> Add a new Boat Here!</span>
+</div>
+<div class="panel-footer">
+    <form class="form-horizontal" [formGroup]="addBoatForm" (ngSubmit)="sendData()">
+
+        <div class="form-group">
+            <label class="control-label col-sm-2" for="boatType">Boat Type: </label>
+            <div class="col-sm-10 input-sup">
+
+
+                <i class="fa fa-id-card-o icon" aria-hidden="true"></i>
+                <input type="text" class="form-control input-field" formControlName="boatType" placeholder="Enter the type of Boat" name="boatType">
+                <div *ngIf="addBoatForm.controls.boatType.errors && (addBoatForm.controls.boatType.touched || addBoatForm.controls.boatType.dirty)" class="alert alert-danger">
+                    Boat Type can't be empty!
+                </div>
+
+
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="control-label col-sm-2" for="location">Location: </label>
+            <div class="col-sm-10 input-sup">
+
+
+                <i class="fa fa-location-arrow icon" aria-hidden="true"></i>
+                <input type="text" class="form-control input-field" formControlName="boatLocation" placeholder="Enter the location of Boat" name="location">
+                <div *ngIf="addBoatForm.controls.boatLocation.errors && (addBoatForm.controls.boatLocation.touched || addBoatForm.controls.boatLocation.dirty)" class="alert alert-danger">
+                    Boat Location can't be empty!
+                </div>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="control-label col-sm-2" for="location">Base Price: </label>
+            <div class="col-sm-10 input-sup">
+
+
+                <i class="fa fa-credit-card-alt icon" aria-hidden="true"></i>
+                <input type="text" class="form-control input-field" formControlName="boatBasePrice" placeholder="Enter the base of Boat" name="basePrice">
+                <div *ngIf="addBoatForm.controls.boatBasePrice.errors && (addBoatForm.controls.boatBasePrice.touched || addBoatForm.controls.boatBasePrice.dirty)" class="alert alert-danger">
+                    Boat Base Price can't be empty!
+                </div>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="control-label col-sm-2" for="allowedDays">Allowed Days: </label>
+            <div class="col-sm-10 input-sup">
+
+
+                <i class="fa fa-sun-o icon" aria-hidden="true"></i>
+                <input type="text" class="form-control input-field" formControlName="boatAllowedDays" placeholder="Enter allowed days on Boat" name="allowedDays">
+                <div *ngIf="addBoatForm.controls.boatAllowedDays.errors && (addBoatForm.controls.boatAllowedDays.touched || addBoatForm.controls.boatAllowedDays.dirty)" class="alert alert-danger">
+                    Allowed days on the boat can't be empty!
+                </div>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="control-label col-sm-2" for="discount">Discount Offered: </label>
+            <div class="col-sm-10 input-sup">
+
+
+                <i class="fa fa-bell icon" aria-hidden="true"></i>
+                <input type="text" class="form-control input-field" formControlName="boatDiscount" placeholder="Enter discounts offered(if any)" name="discount">
+                <div *ngIf="addBoatForm.controls.boatDiscount.errors && (addBoatForm.controls.boatDiscount.touched || addBoatForm.controls.boatDiscount.dirty)" class="alert alert-danger">
+                    Discount has to be provided!
+                </div>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="control-label col-sm-2" for="booking">Booking Starts: </label>
+            <div class="col-sm-10 input-sup">
+
+
+                <i class="fa fa-first-order icon" aria-hidden="true"></i>
+                <input type="text" class="form-control input-field" formControlName="boatDateBooking" placeholder="Enter When booking starts" name="booking">
+
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="control-label col-sm-2" for="message">Message: </label>
+            <div class="col-sm-10 input-sup">
+
+
+                <i class="fa fa-comments icon" aria-hidden="true"></i>
+                <input type="text" class="form-control input-field" formControlName="boatMessage" placeholder="Any message you want to give to customers" name="message">
+
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="control-label col-sm-2" for="image">Image File Name: </label>
+            <div class="col-sm-10 input-sup">
+
+
+                <i class="fa fa-cloud icon" aria-hidden="true"></i>
+                <input type="text" class="form-control input-field" formControlName="boatImage" placeholder="Enter the file name of Image" name="image">
+                <div *ngIf="addBoatForm.controls.boatImage.errors && (addBoatForm.controls.boatImage.touched || addBoatForm.controls.boatImage.dirty)" class="alert alert-danger">
+                    File Name is required!
+                </div>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="control-label col-sm-2" for="description">Boat Description: </label>
+            <div class="col-sm-10 input-sup">
+
+
+                <i class="fa fa-internet-explorer icon" aria-hidden="true"></i>
+                <input type="text" class="form-control input-field" formControlName="boatDescription" placeholder="Give Description about the Boat" name="description">
+                <div *ngIf="addBoatForm.controls.boatDescription.errors && (addBoatForm.controls.boatDescription.touched || addBoatForm.controls.boatDescription.dirty)" class="alert alert-danger">
+                    Boat Description has to be provided!
+                </div>
+            </div>
+        </div>
+
+
+
+        <div align="center">
+
+            <button type="submit" [disabled]="addBoatForm.invalid" class="btn btn-success btn-lg"> <i class="fa fa-check" aria-hidden="true"></i> Submit</button>
+        </div>
+
+
+    </form>
+</div>

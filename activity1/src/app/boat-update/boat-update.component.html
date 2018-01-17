@@ -1,0 +1,37 @@
+<div *ngIf="showForm">
+
+    <form (ngSubmit)="onSubmit()" #boatForm="ngForm">
+        <div class="form-group">
+
+            <label>Base Price:</label>
+            <input type="number" class="form-control" name="basePrice" [(ngModel)]="sendingBoatDetail.basePrice" required #bp="ngModel">
+            <div [hidden]="bp.valid || bp.pristine" class="alert alert-danger">
+                Base Price is required
+            </div>
+        </div>
+
+        <div class="form-group">
+
+            <label>Booking Starts:</label>
+            <input type="text" class="form-control" name="booking" [(ngModel)]="sendingBoatDetail.dateBooking" required #bs="ngModel">
+            <div [hidden]="bs.valid || bs.pristine" class="alert alert-danger">
+                Booking Date is required
+            </div>
+        </div>
+
+        <div class="form-group">
+
+            <label>Description:</label>
+            <input type="text" class="form-control" name="description" [(ngModel)]="sendingBoatDetail.description" required #dsc="ngModel">
+            <div [hidden]="dsc.valid || dsc.pristine" class="alert alert-danger">
+                Description is required
+            </div>
+        </div>
+
+        <button type="submit" class="btn btn-danger" [disabled]="!boatForm.form.valid">Update Boat</button>
+    </form>
+</div>
+
+<div *ngIf="showMessage" class="alert alert-success">
+    {{message}}
+</div>
