@@ -55,7 +55,7 @@ function initializeMap() {
   var locations;
 
   var mapOptions = {
-    center: {lat: 28.6415, lng: 77.3714},
+    center: {lat: 20.2961, lng: 85.8245},
     zoom: 8
   };
 
