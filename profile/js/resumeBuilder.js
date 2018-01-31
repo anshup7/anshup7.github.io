@@ -7,7 +7,7 @@ var bio = {
         twitter: "https://goo.gl/NDGXGW",
         github: "https://goo.gl/fjq1Z1",
         blog: "https://goo.gl/2hB1Lj",
-        location: "Ghaziabad(Uttar Pradesh) India"
+        location: "Bhubaneswar(Odisha) India"
     },
     message: "Hi! Welcome to my profile. All details here are authentic and there is more to explore for you if you contact me!",
 
