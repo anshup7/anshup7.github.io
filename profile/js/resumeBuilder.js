@@ -1,6 +1,6 @@
 var bio = {
     name: "Anshuman Upadhyay",
-    role: "Full Stack Web Developer",
+    role: "MEAN Stack Web Developer",
     contacts: {
         mob: "+91-9837125424",
         email: "anshumanupy@gmail.com",
@@ -11,7 +11,7 @@ var bio = {
     },
     message: "Hi! Welcome to my profile. All details here are authentic and there is more to explore for you if you contact me!",
 
-    skills: ["PHP", "CakePHP", "Python", "NodeJs", "Linux", "Perseverance", "Positive Thought Process", "Quick Learner and Ready to Unlearn!"],
+    skills: ["PHP", "CakePHP", "Python","Express", "Angular 4", "NodeJs", "Linux", "Perseverance", "Positive Thought Process", "Quick Learner and Ready to Unlearn!"],
 
     biopic: "./images/resimg.jpg",
 
@@ -121,9 +121,9 @@ var work = {
     jobs: [{
         employer: "Infosys Ltd.",
         title: "Systems Engineer",
-        dates: "Anytime soon",
-        location: "Mysore(Karnataka) India.",
-        description: "I will be Training at Infosys shortly.",
+        dates: "30-Jan-2018--Present",
+        location: "Bhubaneswar(Odisha) India.",
+        description: "I have joined Infosys BBSR.",
         url: "https://www.infosys.com/"
     }],
 
