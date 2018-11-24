@@ -15,7 +15,7 @@ var bio = {
 
     biopic: "./images/resimg.jpg",
     
-    awsLogo: "./images/AWS_Certified_Logo_294x230_Color.png"
+//     awsLogo: "./images/AWS_Certified_Logo_294x230_Color.png"
 
     display: function () {
 
@@ -23,7 +23,7 @@ var bio = {
 
         $("#header").append(HTMLheaderName.replace("%data%", bio.name));
         $("#header").append(HTMLheaderRole.replace("%data%", bio.role));
-        $("#header").append(HTMLheaderAwsLogo.replace("%data%", bio.awsLogo));
+//         $("#header").append(HTMLheaderAwsLogo.replace("%data%", bio.awsLogo));
         $("#header").append(HTMLbioPic.replace("%data%", bio.biopic));
         $("#header").append(HTMLwelcomeMsg.replace("%data%", bio.message));
         if (bio.skills.length > 0) {
