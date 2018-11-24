@@ -7,13 +7,15 @@ var bio = {
         twitter: "https://goo.gl/NDGXGW",
         github: "https://goo.gl/fjq1Z1",
         blog: "https://goo.gl/2hB1Lj",
-        location: "Bhubaneswar(Odisha) India"
+        location: "Pune(Maharashtra) India"
     },
     message: "Hi! Welcome to my profile. All details here are authentic and there is more to explore for you if you contact me!",
 
     skills: ["PHP", "CakePHP", "Python","Express", "Angular 4", "NodeJs", "Linux", "Perseverance", "Positive Thought Process", "Quick Learner and Ready to Unlearn!"],
 
     biopic: "./images/resimg.jpg",
+    
+    awsLogo: "./images/AWS_Certified_Logo_294x230_Color.png"
 
     display: function () {
 
@@ -21,6 +23,7 @@ var bio = {
 
         $("#header").append(HTMLheaderName.replace("%data%", bio.name));
         $("#header").append(HTMLheaderRole.replace("%data%", bio.role));
+        $("#header").append(HTMLheaderAwsLogo.replace("%data%", bio.awsLogo));
         $("#header").append(HTMLbioPic.replace("%data%", bio.biopic));
         $("#header").append(HTMLwelcomeMsg.replace("%data%", bio.message));
         if (bio.skills.length > 0) {
