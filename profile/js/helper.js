@@ -11,7 +11,7 @@ var HTMLblog = '<li class="flex-item"><span class="orange-text"><i class="fa fa-
 var HTMLlocation = '<li class="flex-item"><span class="orange-text"><i class="fa fa-map-marker" aria-hidden="true"></i> location</span><span class="white-text">%data%</span></li>';
 
 var HTMLbioPic = '<img src="%data%" class="biopic img-responsive">';
-var HTMLheaderAwsLogo = '<img src="%data%" class="aws-logo img-responsive">';
+// var HTMLheaderAwsLogo = '<img src="%data%" class="aws-logo img-responsive">';
 var HTMLwelcomeMsg = '<span class="welcome-message">%data%</span>';
 
 var HTMLskillsStart = '<h3 id="skills-h3">Skills at a Glance:</h3><ul id="skills" class="flex-column"></ul>';
