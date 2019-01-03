@@ -11,7 +11,7 @@ var bio = {
     },
     message: "Hi! Welcome to my profile. All details here are authentic and there is more to explore for you if you contact me!",
 
-    skills: ["PHP", "CakePHP", "Python","Express", "Angular 4", "NodeJs", "Linux", "Perseverance", "Positive Thought Process", "Quick Learner and Ready to Unlearn!"],
+    skills: ["PHP", "AWS", "Python","Express", "Angular 4", "NodeJs", "Linux", "Perseverance", "Positive Thought Process", "Quick Learner and Ready to Unlearn!"],
 
     biopic: "./images/resimg.jpg",
     
@@ -125,8 +125,8 @@ var work = {
         employer: "Infosys Ltd.",
         title: "Systems Engineer",
         dates: "30-Jan-2018--Present",
-        location: "Bhubaneswar(Odisha) India.",
-        description: "I have joined Infosys BBSR.",
+        location: "Pune(Maharashtra) India.",
+        description: "I have joined Infosys Pune after Mysore training.",
         url: "https://www.infosys.com/"
     }],
 
