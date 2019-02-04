@@ -1,0 +1,14 @@
+.searchbox{
+    min-width: 120px;
+    height: 20px!important;
+    border: none;
+}
+
+.searchbox:focus{
+     outline: none !important;
+    box-shadow: none !important;
+}
+
+.lable{
+    font-weight: 500;
+}

@@ -1,0 +1,23 @@
+<div class="row col-12 m-0 p-0">
+  <div class="col-md-3 col-xl-2 border-right" style="height: calc(100vh - 50px);">
+    <div class="row col-12 m-0 p-0 mt-1 justify-content-center" [ngClass]="selected.includes('PD')?'selected':''" (click)="selectPD()"
+      style="cursor: pointer;"><span class="m-1">PROJECT DETAIL</span></div>
+    <div class="row col-12 m-0 p-0 border-top justify-content-center" [ngClass]="selected.includes('PO')?'selected':''" (click)="selectPO()"
+      style="cursor: pointer;"><span class="m-1">PURCHASE ORDER</span></div>
+    <div class="row col-12 m-0 p-0 border-top justify-content-center" [ngClass]="selected.includes('IN')?'selected':''" (click)="selectIN()"
+      style="cursor: pointer;"><span class="m-1">INVOICE</span></div>
+    <div class="row col-12 m-0 p-0 border-top border-bottom justify-content-center" [ngClass]="selected.includes('PC')?'selected':''"
+      (click)="selectPC()" style="cursor: pointer;"><span class="m-1">PROJECT CODE</span></div>
+  </div>
+
+  <div class="col-md-9 col-xl-10">
+    <app-project *ngIf="selected=='PD'" [title]="'Edit Project'" [projectID]="projectID"></app-project>
+    <app-purchase-orders *ngIf="selected=='PO'" [projectID]="projectID" (emitter)="filter($event)"></app-purchase-orders>
+    <app-purchase-order  *ngIf="selected=='PO-CREATE'" [poID]="selectionID" [projectID]="projectID"></app-purchase-order>
+    <app-invoices *ngIf="selected=='IN'"  [projectID]="projectID" (emitter)="filter($event)"></app-invoices>
+    <app-invoice *ngIf="selected=='IN-CREATE'"  [inID]="selectionID"></app-invoice>
+    <app-project-codes *ngIf="selected=='PC'"  [projectID]="projectID" (emitter)="filter($event)"></app-project-codes>
+    <app-project-code *ngIf="selected=='PC-CREATE'"  [pcID]="selectionID"></app-project-code>
+  </div>
+
+</div>

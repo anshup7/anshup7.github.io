@@ -1,0 +1,124 @@
+<div class="container contact-form">
+  <form>
+    <h4 class="mt-3">{{title}} </h4>
+    <div class="row mt-3">
+      <div class="col-md-6">
+        <div class="form-group">
+          <span class="lable">Project Code :   </span>
+          <select class="form-control" name="projectCode" [(ngModel)]="invoice.projectCode">
+            <option *ngFor="let code of projectCodes">{{code}}</option>
+          </select>
+          <!--<input type="text" required class="form-control" placeholder="Project Code *" name="projectCode" [(ngModel)]="invoice.projectCode"
+          />-->
+        </div>
+        <div class="form-group">
+          <span class="lable">PO Number :   </span>
+          <select class="form-control" name="poNumber" [(ngModel)]="invoice.poId">
+            <option *ngFor="let number of poNumbers">{{number}}</option>
+          </select>
+          <!--<input type="text" class="form-control" placeholder="Po ID *" name="poId" [(ngModel)]="invoice.poId" />-->
+        </div>
+        <div class="form-group">
+          <span class="lable">Select Month and Year :   </span>
+          <!--<div class="btn-group">
+            <button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Select Month
+            </button>
+            <div class="dropdown-menu">
+              
+            </div>
+          </div>-->
+          <input type="month" format="Month-Year" class="form-control" placeholder="Month and Year *" name="monthYear" [(ngModel)]="invoice.monthYear"
+          />
+        </div>
+
+
+
+      </div>
+      <div class="col-md-6">
+        <div class="form-group">
+          <span class="lable">Invoice Description :   </span>
+          <textarea class="form-control" placeholder="Invoice Description *" style="width: 100%; height: 100px;" name="ivDesc" [(ngModel)]="invoice.description"></textarea>
+        </div>
+         <div *ngIf="arrayOfFormatStrings.length != 0" class="row div-settings  col-12 m-0 p-0 form-group" role="alert">
+      
+          <span class="lable"><b>Invoice Text :&nbsp;</b> </span> <br/>
+          <span class="lable">Towards services rendered for the month of {{invoice.monthYear}} against PO# {{invoice.poId}} for Project</span>
+          <br/>
+          <p class="mb-0" *ngFor="let invoice of invoices; let i = index"   [attr.data-index]="i">
+            {{"Invoice Line# " + ( i + 1 ) + ", Rate: " + invoice.rate + ", Qty: " + invoice.invoiceQty + ", Amt: $" + (invoice.rate * invoice.invoiceQty) + ""}}
+          </p>
+          
+
+      </div>
+
+      </div>
+      <!--<div *ngIf="arrayOfFormatStrings.length != 0" class="row div-settings justify-content-end col-12 m-0 p-0 form-group" role="alert">
+        <div class="col-6">
+          <span class="lable"><b>Invoice Text :&nbsp;</b> </span> <br/>
+          <span class="lable">Towards services rendered for the month of {{invoice.monthYear}} against PO# {{invoice.poId}} for Project</span>
+          <br/>
+          <p class="mb-0" *ngFor="let invoice of invoices">
+            {{"Invoice Line#" + ", Rate: " + invoice.rate + ", Qty: " + invoice.invoiceQty + ", Amt: $" + (invoice.rate * invoice.invoiceQty) + ""}}
+          </p>
+          
+        </div>
+
+      </div>-->
+
+
+      <div class=" row col-12 m-0 p-0 justify-content-end">
+        <button type="button" class="btn btn-success mb-2 btn-sm" (click)="addRow()"><span class="fa fa-plus mr-2"></span>Add Line Item</button>
+      </div>
+
+      <div class=" row col-12 m-0  p-0" style="font-size: 13px;">
+        <table class="table table-striped shadow-sm">
+          <thead>
+            <tr>
+              <th scope="col">LINE NUMBER</th>
+              <th scope="col">LINE DESC</th>
+              <th scope="col">RATE</th>
+              <th scope="col">PO QTY</th>
+              <th scope="col">REM QUANTITY</th>
+              <th scope="col">INVOICE QTY</th>
+              <th scope="col">AMOUNT</th>
+
+              <th scope="col">EDIT</th>
+              <th scope="col">DELETE</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let each of invoices">
+              <td>{{each.lineNumber}}</td>
+
+              <td>{{each.lineDesc}}</td>
+
+              <td>{{each.rate}}</td>
+
+
+              <td>{{each.qty}}</td>
+
+
+              <td>{{each.remQuantity}}</td>
+
+              <td *ngIf="!each.isEditable">{{each.invoiceQty}}</td>
+              <td *ngIf="each.isEditable"> <input type="text" required class="form-control" (blur)="changeStringData(each)" [(ngModel)]="each.invoiceQty" placeholder="Invoice QTY *"
+                  name="invoiceQty" /></td>
+
+              <td>{{each.invoiceQty * each.rate}}</td>
+
+              <td><span (click)="editInvoice(each)" class="fa fa-pencil pl-2 pr-2 hand"></span></td>
+              <td><span (click)="deleteInvoice(title, each.metaIndex)" class="fa fa-trash pl-2 pr-2 hand fa-lg" style="color: red;"></span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="row col-12 m-1 justify-content-center">
+        <button type="button" class="btn btn-success" (click)="save()">{{title}}</button>
+        <!--<button type="button" class="btn btn-danger ml-3">Cancel</button>-->
+      </div>
+
+
+    </div>
+  </form>
+</div>

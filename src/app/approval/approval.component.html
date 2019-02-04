@@ -1,0 +1,50 @@
+    <div class="row col-12 m-0 p-0 mt-2 justify-content-center">
+
+
+      <div class="col-11 m-0 p-0" style="font-size: 13px;">
+        <table class="table table-striped shadow-sm">
+          <thead>
+            <tr>
+          <th scope="col" (click)="sortTable('projectName')">NAME<span class="fa pl-2 pr-2 hand" [ngClass]="(sort.field =='projectName' ? sort.order == 'ASC' ? 'fa-arrow-down' : 'fa-arrow-up' : 'fa-arrow-down light')"></span></th>
+          <th scope="col" (click)="sortTable('status')">STATUS<span class="fa pl-2 pr-2 hand" [ngClass]="(sort.field =='status' ? sort.order == 'ASC' ? 'fa-arrow-down' : 'fa-arrow-up' : 'fa-arrow-down light')"></span></th>
+          <th scope="col" (click)="sortTable('managerEmail')">PM ID<span class="fa pl-2 pr-2 hand" [ngClass]="(sort.field =='managerEmail' ? sort.order == 'ASC' ? 'fa-arrow-down' : 'fa-arrow-up' : 'fa-arrow-down light')"></span></th>
+          <th scope="col" (click)="sortTable('startDate')">START DATE<span class="fa pl-2 pr-2 hand" [ngClass]="(sort.field =='startDate' ? sort.order == 'ASC' ? 'fa-arrow-down' : 'fa-arrow-up' : 'fa-arrow-down light')"></span></th>
+          <th scope="col" (click)="sortTable('endDate')">END DATE<span class="fa pl-2 pr-2 hand" [ngClass]="(sort.field =='endDate' ? sort.order == 'ASC' ? 'fa-arrow-down' : 'fa-arrow-up' : 'fa-arrow-down light')"></span></th>
+          <th scope="col">ACTION</th>
+        </tr>
+            <tr>
+              <th scope="col">First NAME</th>
+              <th scope="col">LAST NAME</th>
+              <th scope="col">EMAIL</th>
+              <th scope="col">ROLE</th>
+              <th scope="col">APPROVE</th>
+              <th scope="col">REJECT</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let project of projects">
+              <td>{{project.name}}</td>
+              <td>{{project.status}}</td>
+              <td>{{project.startDate}}</td>
+              <td>{{project.endDate}}</td>
+              <td><span (click)="editPO(project.id)" style="color: green;" class="fa fa-check fa-lg pl-2 pr-2 hand"></span></td>
+              <td><span (click)="editPO(project.id)" style="color: red;" class="fa fa-times fa-lg pl-2 pr-2 hand"></span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <ul class="pagination pagination-sm">
+        <li class="page-item">
+          <a class="page-link" (click)="firstClick()">
+            <<</a>
+        </li>
+        <li class="page-item">
+          <a class="page-link" (click)="previousClick()">
+            <</a>
+        </li>
+        <li class="page-item"><a class="page-link" style="color: black">1 of 10</a></li>
+        <li class="page-item"><a class="page-link" (click)="nextClick()">></a></li>
+        <li class="page-item"><a class="page-link" (click)="lastClick()">>></a></li>
+      </ul>
+
+    </div>

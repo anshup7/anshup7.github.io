@@ -1,0 +1,54 @@
+<div class="row col-12 m-0 p-0 mt-2 justify-content-center">
+
+  <div class="col-11 m-0 mt-2 mb-2 p-0">
+    <div class="row col-12 m-0 p-0  justify-content-between">
+      <div>
+        <span style="font-weight: bold">Search:</span>
+        <span class="m-2 p-1 rounded border"><input class=" m-1 searchbox" placeholder="Invoice ID" type="text"></span>
+        <span class="m-2 p-1 rounded border"><input class=" m-1 searchbox" placeholder="Created BY" type="text"></span>
+        <span class="m-2 p-1 rounded border"><input class=" m-1 searchbox" placeholder="PO Number" type="text"></span>
+      </div>
+      <div><button type="button" class="btn btn-success btn-sm" (click)="createPO()">Create Invoice</button></div>
+    </div>
+  </div>
+
+  <div class="col-11 m-0 p-0" style="font-size: 13px;">
+    <table class="table table-striped shadow-sm">
+      <thead>
+        <tr>
+          <th scope="col">CREATED BY</th>
+          <th scope="col">PO NUMBER</th>
+          <th scope="col">INVOICE DATE</th>
+          <th scope="col">START DATE</th>
+          <th scope="col">END DATE</th>
+          <th scope="col">TOTAL AMOUNT</th>
+          <th scope="col">ACTION</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let invoice of invoices">
+          <td>{{invoice.name}}</td>
+          <td>{{invoice.pONumber}}</td>
+          <td>{{invoice.invoiceDate}}</td>
+          <td>{{invoice.endDate}}</td>
+          <td>$ {{invoice.amountBilled}}</td>
+          <td><span (click)="editPO(invoice.id)" class="fa fa-pencil pl-2 pr-2 hand"></span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <ul class="pagination pagination-sm">
+    <li class="page-item">
+      <a class="page-link" (click)="firstClick()">
+        <<</a>
+    </li>
+    <li class="page-item">
+      <a class="page-link" (click)="previousClick()">
+        <</a>
+    </li>
+    <li class="page-item"><a class="page-link" style="color: black">1 of 10</a></li>
+    <li class="page-item"><a class="page-link" (click)="nextClick()">></a></li>
+    <li class="page-item"><a class="page-link" (click)="lastClick()">>></a></li>
+  </ul>
+
+</div>

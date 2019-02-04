@@ -1,0 +1,7 @@
+.header {
+    height: 50px;
+}
+
+.menu-item-active{
+    font-weight: bolder;
+}
